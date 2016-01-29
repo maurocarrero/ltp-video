@@ -3,15 +3,14 @@
 Just testing HTML5 video API with AngularJS and other stuff.
 The feature is wrapped in a directive.
 It has little features so far:
-1. Take pictures
-2. Download pictures using the API
-3. Applying CSS filters to the video output (without affecting the saved pic).
+- Take pictures
+- Download pictures using the API
+- Applying CSS filters to the video output (without affecting the saved pic).
 
 ### Clone this repo
 
-Clone this repository using [git][git]:
+Clone this repository using [git]:
 
-* CHANGE THE REPO
 ```
 git clone https://github.com/maurocarrero/ltp-video.git
 cd ltp-video
@@ -35,4 +34,4 @@ Running "start" script will download bower and npm dependencies, and start both 
 npm start
 ```
 
-Now browse to the app at `http://localhost:8000/app/index.html`.
+Now browse to the app at `http://localhost:8000`.
