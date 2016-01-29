@@ -1,0 +1,27 @@
+<div class="ltp-video">
+    <section class="col-sm-6">
+        <nav class="col-sm-12">
+            <button class="btn btn-success btn-sm btn-block" type="button"
+                    ng-click="sendPic()">Send the pic</button>
+            <button class="btn btn-default btn-sm btn-block" type="button"
+                    ng-click="snapshot()">Take snapshot without sending</button>
+            <button class="btn btn-default btn-sm btn-block" type="button"
+                    ng-click="recordAudio()">Record Audio</button>
+        </nav>
+        <div class="col-sm-6">
+            <button class="btn btn-default btn-sm btn-block" type="button"
+                    ng-click="randomFilter()">Random filter</button>
+        </div>
+        <div class="col-sm-6">
+            <select class="form-control col-sm-3" id="filters"
+                    ng-model="appliedFilter" ng-change="changeFilter()">
+                <option ng-repeat="filter in filters" value="{{filter}}">
+                    {{filter}}
+                </option>
+            </select>
+        </div>
+        <video class="ltp-video col-sm-6" autoplay></video>
+    </section>
+    <div class="images col-sm-6"></div>
+    <canvas style="display: none;"></canvas>
+</div>
