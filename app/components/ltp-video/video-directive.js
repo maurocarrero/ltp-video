@@ -75,7 +75,7 @@ angular.module('ltpVideo.video.ltp-video.directive', [])
 								minHeight: videoResolution.height
 							}
 						}
-					}, function(stream) {
+					}, function (stream) {
 						localMediaStream = stream;
 						video.src = window.URL.createObjectURL(localMediaStream);
 						sizeCanvas();
@@ -163,7 +163,7 @@ angular.module('ltpVideo.video.ltp-video.directive', [])
 
 					var context = new AudioContext();
 
-					navigator.getUserMedia({ audio: true }, function(stream) {
+					navigator.getUserMedia({ audio: true }, function (stream) {
 						var microphone = context.createMediaStreamSource(stream);
 						var filter = context.createBiquadFilter();
 
